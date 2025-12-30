@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>halaman2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="bgMusic" autoplay loop>
+  <source src="Taylor Swift - Love Story.mp3" type="audio/mp3">
+    </audio>
+    
+    <div class="container">
+        <div class="wrapper">
+            <img src="bocil 1.jpeg">
+            <img src="bocil 2.jpeg">
+            <img src="bocil 3.jpeg">
+            <img src="1.jpg">
+            <img src="2.jpg">
+            <img src="3.jpg">
+            <img src="kita 1.jpeg">
+            <img src="kita 2.jpeg">
+            <img src="kita 3.jpeg">
+            <img src="kita 4.jpeg">
+            <img src="kita 5.jpeg">
+            <img src="kita 6.jpeg">
+            <img src="kita 7.jpeg">
+            <img src="kita 8.jpeg">
+            <img src="kita 9.jpeg">
+        </div>
+    </div>
+    <script>
+        const music = document.getElementById("bgMusic");
+
+music.addEventListener("loadedmetadata", () => {
+  const savedTime = localStorage.getItem("musicTime");
+  if (savedTime) {
+    music.currentTime = savedTime;
+  }
+});
+    </script>
+</body>
+</html>

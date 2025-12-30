@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(BACKGROUND.jpg);
+    background-size: cover;
+}
+.container{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    border: 10px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 10 px 25 px 30px rgba(30, 30,200,0.3);
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 35s infinite;
+}
+@keyframes slide {
+  0%,3.5%     { transform: translateX(0); }
+  7%,10.5%    { transform: translateX(-100%); }
+  14%,17.5%   { transform: translateX(-200%); }
+  21%,24.5%   { transform: translateX(-300%); }
+  28%,31.5%   { transform: translateX(-400%); }
+  35%,38.5%   { transform: translateX(-500%); }
+  42%,45.5%   { transform: translateX(-600%); }
+  49%,52.5%   { transform: translateX(-700%); }
+  56%,59.5%   { transform: translateX(-800%); }
+  63%,66.5%   { transform: translateX(-900%); }
+  70%,73.5%   { transform: translateX(-1000%); }
+  77%,80.5%   { transform: translateX(-1100%); }
+  84%,87.5%   { transform: translateX(-1200%); }
+  91%,94.5%   { transform: translateX(-1300%); }
+  100%        { transform: translateX(0); }
+}
+img{
+    width: 100%;
+    height: auto;
+}
